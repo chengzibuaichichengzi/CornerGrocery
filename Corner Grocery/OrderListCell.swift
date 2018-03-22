@@ -10,6 +10,11 @@ import UIKit
 
 class OrderListCell: UITableViewCell {
 
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var amountLabel: UILabel!
+    @IBOutlet var priceLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

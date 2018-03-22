@@ -10,6 +10,10 @@ import UIKit
 
 class FuncCell: UITableViewCell {
 
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var descriptionLabel: UILabel!
+    @IBOutlet var screenImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -9,5 +9,5 @@
 import UIKit
 
 class FeaturedHeaderView: UICollectionReusableView {
-        
+    @IBOutlet var headerLabel: UILabel!
 }

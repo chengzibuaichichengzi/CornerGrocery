@@ -7,8 +7,11 @@
 //
 
 import XCTest
+@testable import Corner_Grocery
 
 class MapViewControllerTests: XCTestCase {
+    
+    let mapViewController = MapViewController()
     
     override func setUp() {
         super.setUp()
@@ -20,16 +23,21 @@ class MapViewControllerTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testCalculateTime(){
+        let distance = 4500.0
+        let correctTime = 28//should be 28 mins
+        XCTAssertEqual(mapViewController.calculateTime(distance: distance), correctTime, "Correct time should be 28 minutes")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testGetHours(){
+        let time = 250
+        let correctHours = 4//should be 4 hours
+        XCTAssertEqual(mapViewController.getHours(time: time), correctHours, "Correct hours should be 4 hours")
     }
     
+    func testGetMinutes(){
+        let time = 280
+        let correctMinutes = 40//should be 40 minutes
+        XCTAssertEqual(mapViewController.getMinutes(time: time), correctMinutes, "Correct minutes should be 40 minutes")
+    }
 }

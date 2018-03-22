@@ -22,8 +22,8 @@
         <attribute name="species" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Product" positionX="-27" positionY="18" width="128" height="165"/>
         <element name="Order" positionX="18" positionY="63" width="128" height="60"/>
+        <element name="Product" positionX="-27" positionY="18" width="128" height="165"/>
         <element name="ProductData" positionX="54" positionY="126" width="128" height="135"/>
     </elements>
 </model>

@@ -7,80 +7,109 @@
 //
 
 import UIKit
+import AnimatableReload
+
 
 class AboutTableViewController: UITableViewController {
 
+    @IBOutlet var aboutTableView: UITableView!
+    
+    //different titles for rows
+    var titleSection = ["My Name", "My Student ID", "App Introduction", "All Libraries"]
+    
     override func viewDidLoad() {
+        
+        aboutTableView.delegate = self
+        aboutTableView.dataSource = self
+        
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        //animation of reloading data
+        AnimatableReload.reload(tableView: self.aboutTableView, animationDirection: "left")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        //animation of reloading data
+        AnimatableReload.reload(tableView: self.aboutTableView, animationDirection: "left")
     }
 
-    // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 2
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        switch (section){
+        case 0:
+            return 1
+        case 1:
+            return 4
+        default:
+            return 0
+        }
     }
 
-    /*
+    //create each row
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        //in second section
+        if indexPath.section == 1{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "InfoCell", for: indexPath) as! InfoCell
+            cell.titleLabel.text = titleSection[indexPath.row]
+            cell.myLabel.text = ""
+            //my name row
+            if indexPath.row == 0{
+                cell.myLabel.text = "Zhiwen Yuan"
+                cell.arrowImage.isHidden = true
+                //make cell unclickable
+                cell.selectionStyle = .none
+            }
+            //my student ID row
+            if indexPath.row == 1{
+                cell.myLabel.text = "27231615"
+                cell.arrowImage.isHidden = true
+                //make cell unclickable
+                cell.selectionStyle = .none
+            }
+            return cell
+        }
+        //in first section
+        else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "NameCell", for: indexPath) as! NameCell
+            //make it unclickable
+            cell.selectionStyle = .none
+            return cell
+        }
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    
+    //set click for special rows
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 1 {
+            //click App Introduction row
+            if indexPath.row == 2{
+                self.performSegue(withIdentifier: "AboutAppSegue", sender: self.titleSection[indexPath.row])
+            }
+            //click All libraries row
+            if indexPath.row == 3{
+                self.performSegue(withIdentifier: "LibrarySegue", sender: self.titleSection[indexPath.row])
+            }
+        }
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    
+    //set height for different sections
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+    {
+        if indexPath.section == 0{
+            return 130.0
+        }
+        else{
+            return 45.0
+        }
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 
     /*
     // MARK: - Navigation

@@ -7,34 +7,131 @@
 //
 
 import UIKit
+import Firebase
 
 class OrderTableViewController: UITableViewController {
 
+    @IBOutlet var orderTableView: UITableView!
+    var ref: FIRDatabaseReference!
+    var productsHandle: FIRDatabaseHandle!
+    
+    var orderList: [Product] = []
+    var orderKey: String!
+    var deliveryMode: String!
+    var totalPrice: Double = 0.0
+
+    
     override func viewDidLoad() {
+        ref = FIRDatabase.database().reference()
+        
+        countTotalPrice(orderList: orderList)
+        
+        orderTableView.dataSource = self
+        orderTableView.delegate = self
+        
         super.viewDidLoad()
+        self.orderTableView.backgroundColor = UIColor.white
+        
+        self.removeBacket()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.orderTableView.reloadData()
+    }
+    
+    //calculate total price for all products in the order
+    func countTotalPrice(orderList: [Product]) -> Double{
+        var allPrice = 0.0
+        for i in orderList{
+            self.totalPrice = self.totalPrice + i.price! * i.amount!
+        }
+        allPrice = totalPrice
+        return allPrice
     }
 
+    //remove all products in bakset after finishing the order
+    func removeBacket(){
+        let user = FIRAuth.auth()?.currentUser
+        //avoid null exception
+        if user != nil{
+            let userID = user?.uid
+            ref.child("Baskets").child(userID!).removeValue()
+        }
+    }
+    
+    //having 3 sections of tablevie
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 3
+    }
+    
+    //decide number of rows based on different table sections
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        switch (section){
+        case 0:
+            return orderList.count
+        case 1:
+            return 1
+        case 2:
+            return 1
+        default:
+            return 0
+        }
+    }
+    
+    //create each cell's information
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.section == 0{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "OrderListCell", for: indexPath) as! OrderListCell
+            cell.selectionStyle = .none
+            let product: Product = self.orderList[indexPath.row]
+            //set labels and image based on product's information
+            cell.nameLabel.text = product.name
+            cell.priceLabel.text = String(product.price! * product.amount!)
+            cell.amountLabel.text = String(Int(product.amount!))
+            
+            return cell
+        }
+
+        else if indexPath.section == 1{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "DestinationCell", for: indexPath) as! DestinationCell
+            cell.selectionStyle = .none
+            if self.deliveryMode == "Delivery to your place."{
+                cell.modeLabel.text = "Your delivery is on the way"
+                cell.infoLabel.text = "You can see the estimated time in map"
+            }
+            else{
+                cell.modeLabel.text = "Your order is waiting in the store"
+                cell.infoLabel.text = "You cam see the store location in map"
+            }
+            return cell
+        }
+        
+        else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "StatusCell", for: indexPath) as! StatusCell
+            cell.selectionStyle = .none
+            cell.priceLabel.text = String(self.totalPrice)
+            cell.statusLabel.text = "Preparing"
+            return cell
+        }
+    }
+    
+    //set different height for different sections
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+    {
+        if indexPath.section == 1 || indexPath.section == 2{
+            return 160.0
+        }
+        else{
+            return 20.0
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
     }
 
     /*

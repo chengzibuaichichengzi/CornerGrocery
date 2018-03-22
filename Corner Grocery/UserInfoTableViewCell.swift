@@ -8,8 +8,13 @@
 
 import UIKit
 
+
 class UserInfoTableViewCell: UITableViewCell {
 
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var infoLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

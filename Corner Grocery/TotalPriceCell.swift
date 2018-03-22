@@ -10,6 +10,10 @@ import UIKit
 
 class TotalPriceCell: UITableViewCell {
 
+    
+    @IBOutlet var totalPriceLabel: UILabel!
+    @IBOutlet var checkOutButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

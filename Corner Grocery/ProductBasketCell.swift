@@ -9,6 +9,13 @@
 import UIKit
 
 class ProductBasketCell: UITableViewCell {
+    
+    @IBOutlet var productImage: UIImageView!
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var amountLabel: UILabel!
+    @IBOutlet var priceLabel: UILabel!
+    @IBOutlet var addButton: UIButton!
+    @IBOutlet var minusButton: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -7,80 +7,74 @@
 //
 
 import UIKit
+import AnimatableReload
 
 class LibraryTableViewController: UITableViewController {
 
+    @IBOutlet var LibraryTableView: UITableView!
+    
+    //4 library titles
+    var libraries = ["SwiftMessages", "SwiftSpinner", "AnimatableReload", "Firebase"]
+    //4 licenses
+    var licenses = ["Copyright (c) 2016 SwiftKick Mobile LLC" + "\n\n" + "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:" + "\n\n" +
+        "The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software",
+            "Copyright (c) 2015 Marin Todorov <touch-code-magazine@underplot.com>" + "\n\n" +
+        "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:" + "\n\n" +
+        "The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
+            "Copyright (c) 2017 harshalrj25 <harshalrj25@gmail.com>" + "\n\n" +
+                "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:" + "\n\n" +
+        "The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
+            "Created by Adam Preble on 1/23/12. Copyright (c) 2012 Adam Preble. All rights reserved." + "\n\n" +
+                "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:" + "\n\n" +
+        "The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software."]
+    
     override func viewDidLoad() {
+        LibraryTableView.delegate = self
+        LibraryTableView.dataSource = self
+        
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        //animation of reloading data
+        AnimatableReload.reload(tableView: self.LibraryTableView, animationDirection: "left")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        //animation of reloading data
+        AnimatableReload.reload(tableView: self.LibraryTableView, animationDirection: "left")
+    }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 4
     }
-
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LibraryCell", for: indexPath) as! LibraryCell
+        cell.nameLabel.text = libraries[indexPath.row]
+        cell.licenseText.text = licenses[indexPath.row]
+        //make cell unclickable
+        cell.selectionStyle = .none
         return cell
+        
     }
-    */
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    //set section height
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+    {
+        return 220.0
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 
     /*
     // MARK: - Navigation

@@ -10,6 +10,9 @@ import UIKit
 
 class LibraryCell: UITableViewCell {
 
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var licenseText: UITextView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

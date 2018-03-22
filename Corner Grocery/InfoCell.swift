@@ -10,6 +10,10 @@ import UIKit
 
 class InfoCell: UITableViewCell {
 
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var myLabel: UILabel!
+    @IBOutlet var arrowImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

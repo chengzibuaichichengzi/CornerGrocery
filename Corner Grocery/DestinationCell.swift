@@ -9,6 +9,10 @@
 import UIKit
 
 class DestinationCell: UITableViewCell {
+    
+    @IBOutlet var modeLabel: UILabel!
+    @IBOutlet var infoLabel: UILabel!
+
 
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -10,4 +10,8 @@ import UIKit
 
 class ProductFeaturedCell: UICollectionViewCell {
     
+    @IBOutlet var productImage: UIImageView!
+    @IBOutlet var productName: UILabel!
+    @IBOutlet var productPrice: UILabel!
+    @IBOutlet var addButton: UIButton!
 }

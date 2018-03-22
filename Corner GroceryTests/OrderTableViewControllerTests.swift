@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import Corner_Grocery
 
 class OrderTableViewControllerTests: XCTestCase {
     
@@ -20,16 +21,19 @@ class OrderTableViewControllerTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testCountTotalPrice(){
+        let orderTableViewController = OrderTableViewController()
+        let product1 = Product()
+        product1.price = 2.0
+        product1.amount = 2
+        let product2 = Product()
+        product2.price = 3.5
+        product2.amount = 4
+        let product3 = Product()
+        product3.price = 2.5
+        product3.amount = 2
+        let correctPrice = 23.0//should be 23
+        let orderList = [product1,product2,product3]
+        XCTAssertEqual(orderTableViewController.countTotalPrice(orderList:orderList), correctPrice, "correct total price should be 23")
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }

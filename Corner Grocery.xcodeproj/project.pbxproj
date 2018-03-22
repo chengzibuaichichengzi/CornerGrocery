@@ -7,13 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87A3D807C14671454B6E80B7 /* Pods_Corner_GroceryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DAE69D3CB7F4AD3395A3A9 /* Pods_Corner_GroceryUITests.framework */; };
+		940F49C7E00FDD00367286AF /* Pods_Corner_GroceryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DE58CE6DB03ED7AD4983E0 /* Pods_Corner_GroceryTests.framework */; };
+		94111BF41EB485020029CDEA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94111BF31EB485020029CDEA /* GoogleService-Info.plist */; };
+		9433836A1EB183F8003D7552 /* ProductFeaturedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943383691EB183F8003D7552 /* ProductFeaturedCell.swift */; };
+		943383781EB20F5E003D7552 /* addProductPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943383771EB20F5E003D7552 /* addProductPopupViewController.swift */; };
+		9433837C1EB220AD003D7552 /* FeaturedHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433837B1EB220AD003D7552 /* FeaturedHeaderView.swift */; };
+		943383801EB2CDDC003D7552 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433837F1EB2CDDC003D7552 /* ProductDetailViewController.swift */; };
 		94380FE41EA74CD70080933A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94380FE31EA74CD70080933A /* AppDelegate.swift */; };
-		94380FE61EA74CD70080933A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94380FE51EA74CD70080933A /* ViewController.swift */; };
 		94380FE91EA74CD70080933A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94380FE71EA74CD70080933A /* Main.storyboard */; };
 		94380FEB1EA74CD70080933A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94380FEA1EA74CD70080933A /* Assets.xcassets */; };
 		94380FEE1EA74CD70080933A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94380FEC1EA74CD70080933A /* LaunchScreen.storyboard */; };
-		94380FF91EA74CD70080933A /* Corner_GroceryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94380FF81EA74CD70080933A /* Corner_GroceryTests.swift */; };
 		943810041EA74CD70080933A /* Corner_GroceryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943810031EA74CD70080933A /* Corner_GroceryUITests.swift */; };
+		943810141EA74D460080933A /* BasketTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943810131EA74D460080933A /* BasketTableViewController.swift */; };
+		9438101A1EA78DFC0080933A /* FeaturedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943810191EA78DFC0080933A /* FeaturedCollectionViewController.swift */; };
+		9438101C1EA78E290080933A /* ProductBasketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9438101B1EA78E290080933A /* ProductBasketCell.swift */; };
+		9438101E1EA79CF90080933A /* TotalPriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9438101D1EA79CF90080933A /* TotalPriceCell.swift */; };
+		943810201EA8E9940080933A /* DeliveryPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9438101F1EA8E9940080933A /* DeliveryPopupViewController.swift */; };
+		944BEA431EBC4BCD0088CC6C /* OrderListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944BEA421EBC4BCD0088CC6C /* OrderListCell.swift */; };
+		944BEA451EBC4BEE0088CC6C /* DestinationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944BEA441EBC4BEE0088CC6C /* DestinationCell.swift */; };
+		944BEA471EBC4C040088CC6C /* StatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944BEA461EBC4C040088CC6C /* StatusCell.swift */; };
+		9489236D1EB5786100CFE512 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9489236C1EB5786100CFE512 /* Product.swift */; };
+		94BB24C81ED282D800DCC927 /* SignOutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB24C71ED282D800DCC927 /* SignOutCell.swift */; };
+		94C10CBC1EDD707B00BCE9BB /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C10CBB1EDD707B00BCE9BB /* AboutTableViewController.swift */; };
+		94C10CBE1EDD70A800BCE9BB /* NameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C10CBD1EDD70A800BCE9BB /* NameCell.swift */; };
+		94C10CC01EDD70B300BCE9BB /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C10CBF1EDD70B300BCE9BB /* InfoCell.swift */; };
+		94C10CC51EDD7D5300BCE9BB /* AboutAppTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C10CC41EDD7D5300BCE9BB /* AboutAppTableViewController.swift */; };
+		94C10CC71EDD7E3500BCE9BB /* IntroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C10CC61EDD7E3500BCE9BB /* IntroCell.swift */; };
+		94C10CC91EDD7E4400BCE9BB /* FuncCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C10CC81EDD7E4400BCE9BB /* FuncCell.swift */; };
+		94C10CCD1EDDAFD000BCE9BB /* LibraryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C10CCC1EDDAFD000BCE9BB /* LibraryCell.swift */; };
+		94C10CCF1EDDB46900BCE9BB /* LibraryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C10CCE1EDDB46900BCE9BB /* LibraryTableViewController.swift */; };
+		94D89C541EBC525E008E1CAF /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D89C531EBC525E008E1CAF /* OrderTableViewController.swift */; };
+		94D89CAE1EBDF77E008E1CAF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D89CAD1EBDF77E008E1CAF /* CoreLocation.framework */; };
+		94D89CB01EBDF783008E1CAF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D89CAF1EBDF783008E1CAF /* MapKit.framework */; };
+		94D89CB21EBDF866008E1CAF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D89CB11EBDF866008E1CAF /* MapViewController.swift */; };
+		94EA5B801EB5C6F100F2DA1B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94380FEF1EA74CD70080933A /* Info.plist */; };
+		94EA5B821EB5C79300F2DA1B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA5B811EB5C79300F2DA1B /* LoginViewController.swift */; };
+		94EA5B841EB5C7B100F2DA1B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA5B831EB5C7B100F2DA1B /* SignUpViewController.swift */; };
+		94EFF8AE1EBF626700E47A94 /* MyCenterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EFF8AD1EBF626700E47A94 /* MyCenterTableViewController.swift */; };
+		94EFF8B01EBF62A200E47A94 /* UserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EFF8AF1EBF62A200E47A94 /* UserInfoTableViewCell.swift */; };
+		94EFF8B21EBF62B200E47A94 /* UserOtherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EFF8B11EBF62B200E47A94 /* UserOtherTableViewCell.swift */; };
+		94F610551EE1A2DD006625D2 /* OrderTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F610541EE1A2DD006625D2 /* OrderTableViewControllerTests.swift */; };
+		94F610571EE25F35006625D2 /* MapViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F610561EE25F35006625D2 /* MapViewControllerTests.swift */; };
+		F48C866E209CDF4E5DF60864 /* Pods_Corner_Grocery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A3443F9F24EEB846088346 /* Pods_Corner_Grocery.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +70,61 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05DE572B2FB88199812C83E7 /* Pods-Corner GroceryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Corner GroceryUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Corner GroceryUITests/Pods-Corner GroceryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5580E37909899BC442C6375D /* Pods-Corner GroceryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Corner GroceryUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Corner GroceryUITests/Pods-Corner GroceryUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		57DE58CE6DB03ED7AD4983E0 /* Pods_Corner_GroceryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Corner_GroceryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94111BF31EB485020029CDEA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		942EAE6B1EBEB1CB0014D9C6 /* Corner Grocery-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Corner Grocery-Bridging-Header.h"; sourceTree = "<group>"; };
+		943383691EB183F8003D7552 /* ProductFeaturedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductFeaturedCell.swift; sourceTree = "<group>"; };
+		943383771EB20F5E003D7552 /* addProductPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addProductPopupViewController.swift; sourceTree = "<group>"; };
+		9433837B1EB220AD003D7552 /* FeaturedHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedHeaderView.swift; sourceTree = "<group>"; };
+		9433837F1EB2CDDC003D7552 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		94380FE01EA74CD70080933A /* Corner Grocery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Corner Grocery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94380FE31EA74CD70080933A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		94380FE51EA74CD70080933A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		94380FE81EA74CD70080933A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94380FEA1EA74CD70080933A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94380FED1EA74CD70080933A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94380FEF1EA74CD70080933A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94380FF41EA74CD70080933A /* Corner GroceryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Corner GroceryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		94380FF81EA74CD70080933A /* Corner_GroceryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corner_GroceryTests.swift; sourceTree = "<group>"; };
 		94380FFA1EA74CD70080933A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94380FFF1EA74CD70080933A /* Corner GroceryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Corner GroceryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		943810031EA74CD70080933A /* Corner_GroceryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corner_GroceryUITests.swift; sourceTree = "<group>"; };
 		943810051EA74CD80080933A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		943810131EA74D460080933A /* BasketTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketTableViewController.swift; sourceTree = "<group>"; };
+		943810191EA78DFC0080933A /* FeaturedCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedCollectionViewController.swift; sourceTree = "<group>"; };
+		9438101B1EA78E290080933A /* ProductBasketCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductBasketCell.swift; sourceTree = "<group>"; };
+		9438101D1EA79CF90080933A /* TotalPriceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalPriceCell.swift; sourceTree = "<group>"; };
+		9438101F1EA8E9940080933A /* DeliveryPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryPopupViewController.swift; sourceTree = "<group>"; };
+		944BEA421EBC4BCD0088CC6C /* OrderListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListCell.swift; sourceTree = "<group>"; };
+		944BEA441EBC4BEE0088CC6C /* DestinationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationCell.swift; sourceTree = "<group>"; };
+		944BEA461EBC4C040088CC6C /* StatusCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusCell.swift; sourceTree = "<group>"; };
+		9489236C1EB5786100CFE512 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		94BB24C71ED282D800DCC927 /* SignOutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignOutCell.swift; sourceTree = "<group>"; };
+		94C10CBB1EDD707B00BCE9BB /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
+		94C10CBD1EDD70A800BCE9BB /* NameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameCell.swift; sourceTree = "<group>"; };
+		94C10CBF1EDD70B300BCE9BB /* InfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
+		94C10CC41EDD7D5300BCE9BB /* AboutAppTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutAppTableViewController.swift; path = ../AboutAppTableViewController.swift; sourceTree = "<group>"; };
+		94C10CC61EDD7E3500BCE9BB /* IntroCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroCell.swift; sourceTree = "<group>"; };
+		94C10CC81EDD7E4400BCE9BB /* FuncCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuncCell.swift; sourceTree = "<group>"; };
+		94C10CCC1EDDAFD000BCE9BB /* LibraryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LibraryCell.swift; path = ../LibraryCell.swift; sourceTree = "<group>"; };
+		94C10CCE1EDDB46900BCE9BB /* LibraryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LibraryTableViewController.swift; path = ../LibraryTableViewController.swift; sourceTree = "<group>"; };
+		94D89C531EBC525E008E1CAF /* OrderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrderTableViewController.swift; path = ../OrderTableViewController.swift; sourceTree = "<group>"; };
+		94D89CAD1EBDF77E008E1CAF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		94D89CAF1EBDF783008E1CAF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		94D89CB11EBDF866008E1CAF /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		94EA5B811EB5C79300F2DA1B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		94EA5B831EB5C7B100F2DA1B /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		94EFF8AD1EBF626700E47A94 /* MyCenterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyCenterTableViewController.swift; path = ../MyCenterTableViewController.swift; sourceTree = "<group>"; };
+		94EFF8AF1EBF62A200E47A94 /* UserInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewCell.swift; sourceTree = "<group>"; };
+		94EFF8B11EBF62B200E47A94 /* UserOtherTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserOtherTableViewCell.swift; sourceTree = "<group>"; };
+		94F610541EE1A2DD006625D2 /* OrderTableViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewControllerTests.swift; sourceTree = "<group>"; };
+		94F610561EE25F35006625D2 /* MapViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewControllerTests.swift; sourceTree = "<group>"; };
+		B5DAE69D3CB7F4AD3395A3A9 /* Pods_Corner_GroceryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Corner_GroceryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B778B5343365B6C1DE718D75 /* Pods-Corner Grocery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Corner Grocery.release.xcconfig"; path = "Pods/Target Support Files/Pods-Corner Grocery/Pods-Corner Grocery.release.xcconfig"; sourceTree = "<group>"; };
+		D0A3443F9F24EEB846088346 /* Pods_Corner_Grocery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Corner_Grocery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC86EEDBE9B441ED3A85D5D /* Pods-Corner GroceryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Corner GroceryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Corner GroceryTests/Pods-Corner GroceryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EAF63993B67001FA8C13E67E /* Pods-Corner GroceryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Corner GroceryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Corner GroceryTests/Pods-Corner GroceryTests.release.xcconfig"; sourceTree = "<group>"; };
+		F38CD1670685344ED660C3CD /* Pods-Corner Grocery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Corner Grocery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Corner Grocery/Pods-Corner Grocery.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +132,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D89CB01EBDF783008E1CAF /* MapKit.framework in Frameworks */,
+				94D89CAE1EBDF77E008E1CAF /* CoreLocation.framework in Frameworks */,
+				F48C866E209CDF4E5DF60864 /* Pods_Corner_Grocery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940F49C7E00FDD00367286AF /* Pods_Corner_GroceryTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +150,61 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87A3D807C14671454B6E80B7 /* Pods_Corner_GroceryUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		208F2B09734A39E918C795DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F38CD1670685344ED660C3CD /* Pods-Corner Grocery.debug.xcconfig */,
+				B778B5343365B6C1DE718D75 /* Pods-Corner Grocery.release.xcconfig */,
+				EAC86EEDBE9B441ED3A85D5D /* Pods-Corner GroceryTests.debug.xcconfig */,
+				EAF63993B67001FA8C13E67E /* Pods-Corner GroceryTests.release.xcconfig */,
+				5580E37909899BC442C6375D /* Pods-Corner GroceryUITests.debug.xcconfig */,
+				05DE572B2FB88199812C83E7 /* Pods-Corner GroceryUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9433837D1EB225E1003D7552 /* FeaturedPage */ = {
+			isa = PBXGroup;
+			children = (
+				943810191EA78DFC0080933A /* FeaturedCollectionViewController.swift */,
+				943383771EB20F5E003D7552 /* addProductPopupViewController.swift */,
+				9433837F1EB2CDDC003D7552 /* ProductDetailViewController.swift */,
+				943383691EB183F8003D7552 /* ProductFeaturedCell.swift */,
+				9433837B1EB220AD003D7552 /* FeaturedHeaderView.swift */,
+			);
+			name = FeaturedPage;
+			sourceTree = "<group>";
+		};
+		9433837E1EB225F7003D7552 /* BasketPage */ = {
+			isa = PBXGroup;
+			children = (
+				943810131EA74D460080933A /* BasketTableViewController.swift */,
+				9438101F1EA8E9940080933A /* DeliveryPopupViewController.swift */,
+				9438101D1EA79CF90080933A /* TotalPriceCell.swift */,
+				9438101B1EA78E290080933A /* ProductBasketCell.swift */,
+			);
+			name = BasketPage;
+			sourceTree = "<group>";
+		};
+		943383811EB2E5C8003D7552 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94D89CAF1EBDF783008E1CAF /* MapKit.framework */,
+				94D89CAD1EBDF77E008E1CAF /* CoreLocation.framework */,
+				D0A3443F9F24EEB846088346 /* Pods_Corner_Grocery.framework */,
+				57DE58CE6DB03ED7AD4983E0 /* Pods_Corner_GroceryTests.framework */,
+				B5DAE69D3CB7F4AD3395A3A9 /* Pods_Corner_GroceryUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		94380FD71EA74CD70080933A = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +212,8 @@
 				94380FF71EA74CD70080933A /* Corner GroceryTests */,
 				943810021EA74CD70080933A /* Corner GroceryUITests */,
 				94380FE11EA74CD70080933A /* Products */,
+				943383811EB2E5C8003D7552 /* Frameworks */,
+				208F2B09734A39E918C795DA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +231,20 @@
 			isa = PBXGroup;
 			children = (
 				94380FE31EA74CD70080933A /* AppDelegate.swift */,
-				94380FE51EA74CD70080933A /* ViewController.swift */,
-				94380FE71EA74CD70080933A /* Main.storyboard */,
-				94380FEA1EA74CD70080933A /* Assets.xcassets */,
 				94380FEC1EA74CD70080933A /* LaunchScreen.storyboard */,
+				94380FE71EA74CD70080933A /* Main.storyboard */,
+				9489236C1EB5786100CFE512 /* Product.swift */,
+				94D89CB11EBDF866008E1CAF /* MapViewController.swift */,
+				94C10CC11EDD70BE00BCE9BB /* AboutPage */,
+				94EFF8B31EBF62C400E47A94 /* MyCenterPage */,
+				94EA5B851EB5E73500F2DA1B /* UserValidationPage */,
+				9433837D1EB225E1003D7552 /* FeaturedPage */,
+				9433837E1EB225F7003D7552 /* BasketPage */,
+				944BEA481EBC4C110088CC6C /* OrderStatusPage */,
+				94380FEA1EA74CD70080933A /* Assets.xcassets */,
 				94380FEF1EA74CD70080933A /* Info.plist */,
+				94111BF31EB485020029CDEA /* GoogleService-Info.plist */,
+				942EAE6B1EBEB1CB0014D9C6 /* Corner Grocery-Bridging-Header.h */,
 			);
 			path = "Corner Grocery";
 			sourceTree = "<group>";
@@ -110,7 +252,8 @@
 		94380FF71EA74CD70080933A /* Corner GroceryTests */ = {
 			isa = PBXGroup;
 			children = (
-				94380FF81EA74CD70080933A /* Corner_GroceryTests.swift */,
+				94F610541EE1A2DD006625D2 /* OrderTableViewControllerTests.swift */,
+				94F610561EE25F35006625D2 /* MapViewControllerTests.swift */,
 				94380FFA1EA74CD70080933A /* Info.plist */,
 			);
 			path = "Corner GroceryTests";
@@ -125,6 +268,52 @@
 			path = "Corner GroceryUITests";
 			sourceTree = "<group>";
 		};
+		944BEA481EBC4C110088CC6C /* OrderStatusPage */ = {
+			isa = PBXGroup;
+			children = (
+				94D89C531EBC525E008E1CAF /* OrderTableViewController.swift */,
+				944BEA421EBC4BCD0088CC6C /* OrderListCell.swift */,
+				944BEA441EBC4BEE0088CC6C /* DestinationCell.swift */,
+				944BEA461EBC4C040088CC6C /* StatusCell.swift */,
+			);
+			name = OrderStatusPage;
+			sourceTree = "<group>";
+		};
+		94C10CC11EDD70BE00BCE9BB /* AboutPage */ = {
+			isa = PBXGroup;
+			children = (
+				94C10CBB1EDD707B00BCE9BB /* AboutTableViewController.swift */,
+				94C10CBD1EDD70A800BCE9BB /* NameCell.swift */,
+				94C10CBF1EDD70B300BCE9BB /* InfoCell.swift */,
+				94C10CC41EDD7D5300BCE9BB /* AboutAppTableViewController.swift */,
+				94C10CC61EDD7E3500BCE9BB /* IntroCell.swift */,
+				94C10CC81EDD7E4400BCE9BB /* FuncCell.swift */,
+				94C10CCE1EDDB46900BCE9BB /* LibraryTableViewController.swift */,
+				94C10CCC1EDDAFD000BCE9BB /* LibraryCell.swift */,
+			);
+			name = AboutPage;
+			sourceTree = "<group>";
+		};
+		94EA5B851EB5E73500F2DA1B /* UserValidationPage */ = {
+			isa = PBXGroup;
+			children = (
+				94EA5B831EB5C7B100F2DA1B /* SignUpViewController.swift */,
+				94EA5B811EB5C79300F2DA1B /* LoginViewController.swift */,
+			);
+			name = UserValidationPage;
+			sourceTree = "<group>";
+		};
+		94EFF8B31EBF62C400E47A94 /* MyCenterPage */ = {
+			isa = PBXGroup;
+			children = (
+				94EFF8AD1EBF626700E47A94 /* MyCenterTableViewController.swift */,
+				94EFF8AF1EBF62A200E47A94 /* UserInfoTableViewCell.swift */,
+				94EFF8B11EBF62B200E47A94 /* UserOtherTableViewCell.swift */,
+				94BB24C71ED282D800DCC927 /* SignOutCell.swift */,
+			);
+			name = MyCenterPage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +321,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 943810081EA74CD80080933A /* Build configuration list for PBXNativeTarget "Corner Grocery" */;
 			buildPhases = (
+				4E8432C4917A67EF30D2CAC7 /* [CP] Check Pods Manifest.lock */,
 				94380FDC1EA74CD70080933A /* Sources */,
 				94380FDD1EA74CD70080933A /* Frameworks */,
 				94380FDE1EA74CD70080933A /* Resources */,
+				5973E8187F9212FACC2F71E2 /* [CP] Embed Pods Frameworks */,
+				70A80E9C628E938208662A65 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +341,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9438100B1EA74CD80080933A /* Build configuration list for PBXNativeTarget "Corner GroceryTests" */;
 			buildPhases = (
+				8D6084014497B5FF1436F463 /* [CP] Check Pods Manifest.lock */,
 				94380FF01EA74CD70080933A /* Sources */,
 				94380FF11EA74CD70080933A /* Frameworks */,
 				94380FF21EA74CD70080933A /* Resources */,
+				3959C62F2DC9F9294DE37E6F /* [CP] Embed Pods Frameworks */,
+				3AB01282C812F3EC4C30820D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +362,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9438100E1EA74CD80080933A /* Build configuration list for PBXNativeTarget "Corner GroceryUITests" */;
 			buildPhases = (
+				C71806805FA8E4F05C6F734D /* [CP] Check Pods Manifest.lock */,
 				94380FFB1EA74CD70080933A /* Sources */,
 				94380FFC1EA74CD70080933A /* Frameworks */,
 				94380FFD1EA74CD70080933A /* Resources */,
+				3DAA2C5ADF9C8F5965E8DE0B /* [CP] Embed Pods Frameworks */,
+				F3C6AC1B3FF1D2A89CAB02E9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,10 +391,13 @@
 				TargetAttributes = {
 					94380FDF1EA74CD70080933A = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = DH595P3R72;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					94380FF31EA74CD70080933A = {
 						CreatedOnToolsVersion = 8.3.1;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 94380FDF1EA74CD70080933A;
 					};
@@ -233,7 +434,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				94380FEE1EA74CD70080933A /* LaunchScreen.storyboard in Resources */,
+				94111BF41EB485020029CDEA /* GoogleService-Info.plist in Resources */,
 				94380FEB1EA74CD70080933A /* Assets.xcassets in Resources */,
+				94EA5B801EB5C6F100F2DA1B /* Info.plist in Resources */,
 				94380FE91EA74CD70080933A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,13 +457,179 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3959C62F2DC9F9294DE37E6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Corner GroceryTests/Pods-Corner GroceryTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AB01282C812F3EC4C30820D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Corner GroceryTests/Pods-Corner GroceryTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DAA2C5ADF9C8F5965E8DE0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Corner GroceryUITests/Pods-Corner GroceryUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E8432C4917A67EF30D2CAC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5973E8187F9212FACC2F71E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Corner Grocery/Pods-Corner Grocery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70A80E9C628E938208662A65 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Corner Grocery/Pods-Corner Grocery-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D6084014497B5FF1436F463 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C71806805FA8E4F05C6F734D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F3C6AC1B3FF1D2A89CAB02E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Corner GroceryUITests/Pods-Corner GroceryUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		94380FDC1EA74CD70080933A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94380FE61EA74CD70080933A /* ViewController.swift in Sources */,
+				94C10CCD1EDDAFD000BCE9BB /* LibraryCell.swift in Sources */,
 				94380FE41EA74CD70080933A /* AppDelegate.swift in Sources */,
+				943810201EA8E9940080933A /* DeliveryPopupViewController.swift in Sources */,
+				9438101A1EA78DFC0080933A /* FeaturedCollectionViewController.swift in Sources */,
+				94C10CBE1EDD70A800BCE9BB /* NameCell.swift in Sources */,
+				94EFF8B21EBF62B200E47A94 /* UserOtherTableViewCell.swift in Sources */,
+				94EFF8B01EBF62A200E47A94 /* UserInfoTableViewCell.swift in Sources */,
+				944BEA471EBC4C040088CC6C /* StatusCell.swift in Sources */,
+				9433837C1EB220AD003D7552 /* FeaturedHeaderView.swift in Sources */,
+				944BEA431EBC4BCD0088CC6C /* OrderListCell.swift in Sources */,
+				94C10CC91EDD7E4400BCE9BB /* FuncCell.swift in Sources */,
+				94D89CB21EBDF866008E1CAF /* MapViewController.swift in Sources */,
+				94C10CCF1EDDB46900BCE9BB /* LibraryTableViewController.swift in Sources */,
+				94C10CBC1EDD707B00BCE9BB /* AboutTableViewController.swift in Sources */,
+				9438101C1EA78E290080933A /* ProductBasketCell.swift in Sources */,
+				94C10CC01EDD70B300BCE9BB /* InfoCell.swift in Sources */,
+				9438101E1EA79CF90080933A /* TotalPriceCell.swift in Sources */,
+				94BB24C81ED282D800DCC927 /* SignOutCell.swift in Sources */,
+				943383801EB2CDDC003D7552 /* ProductDetailViewController.swift in Sources */,
+				94D89C541EBC525E008E1CAF /* OrderTableViewController.swift in Sources */,
+				94EA5B841EB5C7B100F2DA1B /* SignUpViewController.swift in Sources */,
+				9433836A1EB183F8003D7552 /* ProductFeaturedCell.swift in Sources */,
+				94C10CC51EDD7D5300BCE9BB /* AboutAppTableViewController.swift in Sources */,
+				943810141EA74D460080933A /* BasketTableViewController.swift in Sources */,
+				943383781EB20F5E003D7552 /* addProductPopupViewController.swift in Sources */,
+				94C10CC71EDD7E3500BCE9BB /* IntroCell.swift in Sources */,
+				94EA5B821EB5C79300F2DA1B /* LoginViewController.swift in Sources */,
+				944BEA451EBC4BEE0088CC6C /* DestinationCell.swift in Sources */,
+				9489236D1EB5786100CFE512 /* Product.swift in Sources */,
+				94EFF8AE1EBF626700E47A94 /* MyCenterTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +637,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94380FF91EA74CD70080933A /* Corner_GroceryTests.swift in Sources */,
+				94F610551EE1A2DD006625D2 /* OrderTableViewControllerTests.swift in Sources */,
+				94F610571EE25F35006625D2 /* MapViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,37 +782,51 @@
 		};
 		943810091EA74CD80080933A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F38CD1670685344ED660C3CD /* Pods-Corner Grocery.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = DH595P3R72;
 				INFOPLIST_FILE = "Corner Grocery/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "monash-student.Corner-Grocery";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuanzhiwen.Corner-Grocery";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Corner Grocery/Corner Grocery-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		9438100A1EA74CD80080933A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B778B5343365B6C1DE718D75 /* Pods-Corner Grocery.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = DH595P3R72;
 				INFOPLIST_FILE = "Corner Grocery/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "monash-student.Corner-Grocery";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuanzhiwen.Corner-Grocery";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Corner Grocery/Corner Grocery-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		9438100C1EA74CD80080933A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAC86EEDBE9B441ED3A85D5D /* Pods-Corner GroceryTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Corner GroceryTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "monash-student.Corner-GroceryTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Corner Grocery.app/Corner Grocery";
 			};
@@ -450,9 +834,11 @@
 		};
 		9438100D1EA74CD80080933A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAF63993B67001FA8C13E67E /* Pods-Corner GroceryTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Corner GroceryTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "monash-student.Corner-GroceryTests";
@@ -464,6 +850,7 @@
 		};
 		9438100F1EA74CD80080933A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5580E37909899BC442C6375D /* Pods-Corner GroceryUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "Corner GroceryUITests/Info.plist";
@@ -477,6 +864,7 @@
 		};
 		943810101EA74CD80080933A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05DE572B2FB88199812C83E7 /* Pods-Corner GroceryUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "Corner GroceryUITests/Info.plist";
@@ -507,6 +895,7 @@
 				9438100A1EA74CD80080933A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9438100B1EA74CD80080933A /* Build configuration list for PBXNativeTarget "Corner GroceryTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +904,7 @@
 				9438100D1EA74CD80080933A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9438100E1EA74CD80080933A /* Build configuration list for PBXNativeTarget "Corner GroceryUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +913,7 @@
 				943810101EA74CD80080933A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

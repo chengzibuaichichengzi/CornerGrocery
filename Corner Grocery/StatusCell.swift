@@ -10,6 +10,9 @@ import UIKit
 
 class StatusCell: UITableViewCell {
 
+    @IBOutlet var priceLabel: UILabel!
+    @IBOutlet var statusLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
