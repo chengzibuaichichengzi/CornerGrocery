@@ -1,15 +1,14 @@
 //
-//  Corner_GroceryTests.swift
-//  Corner GroceryTests
+//  OrderTableViewControllerTests.swift
+//  Corner Grocery
 //
-//  Created by YUAN ZHIWEN on 19/4/17.
+//  Created by YUAN ZHIWEN on 2/6/17.
 //  Copyright © 2017 YUAN ZHIWEN. All rights reserved.
 //
 
 import XCTest
-@testable import Corner_Grocery
 
-class Corner_GroceryTests: XCTestCase {
+class OrderTableViewControllerTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
